@@ -10,7 +10,7 @@ apt update
 apt -y full-upgrade
 
 #Install applications:
-apt install -y mc ansible ssh git
+apt install -y mc ansible ssh git docker
 
 #Configuration SSH:
 echo PermitRootLogin=yes >> /etc/ssh/sshd_config
