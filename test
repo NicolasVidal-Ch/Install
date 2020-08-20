@@ -16,4 +16,4 @@ apt install -y mc ansible ssh git docker
 echo PermitRootLogin=yes >> /etc/ssh/sshd_config
 
 #Restart SSH:
-sytemctl restart sshd.service
+systemctl restart sshd.service
