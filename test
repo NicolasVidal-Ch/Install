@@ -1,0 +1,19 @@
+#Change lists on /etc/apt/sources.list:
+> /etc/apt/sources.list
+echo deb http://archive.raspbian.org/raspbian wheezy main contrib non-free >> /etc/apt/sources.list
+echo deb http://deb.debian.org/debian buster main contrib non-free >> /etc/apt/sources.list
+echo deb http://deb.debian.org/debian-security/ buster/updates main contrib non-free >> /etc/apt/sources.list
+echo deb http://deb.debian.org/debian buster-updates main contrib non-free >> /etc/apt/sources.list
+
+#Update & Upgrade:
+apt update
+apt -y full-upgrade
+
+#Install applications:
+apt install -y mc ansible ssh git
+
+#Configuration SSH:
+echo PermitRootLogin=yes >> /etc/ssh/sshd_config
+
+#Restart SSH:
+sytemctl restart sshd.service
