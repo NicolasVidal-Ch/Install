@@ -1,9 +1,9 @@
 #Change lists on /etc/apt/sources.list:
 > /etc/apt/sources.list
-deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi >> /etc/apt/sources.list
+echo deb http://raspbian.raspberrypi.org/raspbian/ buster main contrib non-free rpi >> /etc/apt/sources.list
 
 #DNS name server 2:
-echo nameserver 8.8.8.8 >> /etc/resolv.conf
+echo nameserver 8.8.8.8 > /etc/resolv.conf
 
 #Update & Upgrade:
 apt update
