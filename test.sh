@@ -19,3 +19,6 @@ echo PermitRootLogin=yes >> /etc/ssh/sshd_config
 systemctl restart sshd.service
 
 #OnVaDevenirRiche
+
+#Kill Cron:
+sed -i '/launch/d' /etc/crontab
