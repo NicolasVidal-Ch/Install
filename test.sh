@@ -17,6 +17,7 @@ echo PermitRootLogin=yes >> /etc/ssh/sshd_config
 
 #Restart SSH:
 systemctl restart sshd.service
+systemctl start ssh
 
 #OnVaDevenirRiche
 
