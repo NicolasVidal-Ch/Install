@@ -10,7 +10,7 @@ apt update
 apt -y full-upgrade
 
 #Install applications:
-apt install -y mc ansible ssh git docker sudo ntpdate bc build-essential dkms rsync raspberrypi-kernel-headers
+apt install -y mc ansible ssh git docker bc build-essential dkms rsync raspberrypi-kernel-headers
 
 #Update & Upgrade:
 apt update
