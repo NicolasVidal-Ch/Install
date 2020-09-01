@@ -10,7 +10,11 @@ apt update
 apt -y full-upgrade
 
 #Install applications:
-apt install -y mc ansible ssh git docker sudo
+apt install -y mc ansible ssh git docker sudo ntpdate bc build-essential dkms rsync raspberrypi-kernel-headers
+
+#Update & Upgrade:
+apt update
+apt -y full-upgrade
 
 #Configuration SSH:
 echo PermitRootLogin=yes >> /etc/ssh/sshd_config
